@@ -1,2 +1,0 @@
-# holbertonschool-printf
-|PROJECT PRINTF|
