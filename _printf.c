@@ -9,8 +9,17 @@
 * Retorno: print value chars
 */
 int _printf(const char *format, ...){
-    unsigned int i = 0;
+    unsigned int i = 0, count = 0;
 
 if (!format)
-    return (NULL);
+    exit (1);
 while (format[i])
+{
+    if (format [i] != '%')
+        {
+            _putchar (format[i]);
+            count ++;
+        }
+}
+
+}
