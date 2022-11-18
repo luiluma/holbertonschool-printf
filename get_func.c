@@ -6,9 +6,9 @@
 *
 * @s: verificacion
 *
-* Retorno: puntero a funcion
+* Return: puntero a funcion
 */
-int (* get_func(const char *s,))(va_list)
+int (*get_func(const char *s))(va_list)
 {
     f_funct arr[] = {
 
@@ -16,16 +16,17 @@ int (* get_func(const char *s,))(va_list)
         {"s", print_str},
 		{"i", print_int}, 
         {"d", print_int},
-        {"%"}, print_for},
-};
-    int i;
-    i = 0;
+        {"%", print_form},
+    };
+    int i = 0;
 
     while (i < 5)
     {
         if (s == arr[i].s[0])
+        {
 			return (arr[i].f);
-
+        }
 		i++;
 	}
 	return (NULL);
+}
