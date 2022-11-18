@@ -1,24 +1,24 @@
 #ifndef MAIN_H
 #define MAIN_H
+<<<<<<< HEAD
 
 /*libraries*/
 #include<stdlib.h>
 #include<stdio.h>
+=======
+>>>>>>> 4d0ff69651dec698e7b98bf41dcd568e951a8b42
 #include <stdarg.h>
-#include<string.h>
 #include <unistd.h>
 
+<<<<<<< HEAD
 /*prototypes*/
 int (*get_func(const char *s))(va_list);
 int _printf(const char *format, ...);
-
-//Estructura de la funcion:
-typedef struct f_funct
-{
-	char *f_funct;
-	int (*f)(int a, int b);
-} f_funct;
-
-
+=======
+int _printf(const char *format, ...); /*Prototype of _printf*/
+int print_char(char c);
+int print_string(char *s);
+int get_spec_format(char *);
+>>>>>>> 4d0ff69651dec698e7b98bf41dcd568e951a8b42
 
 #endif
