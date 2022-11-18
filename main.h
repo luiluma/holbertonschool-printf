@@ -1,5 +1,5 @@
-#ifdef HEADER_H
-#define HEADER_H
+#ifdef MAIN_H
+#define MAIN_H
 
 //Libraries:
 #include<stdlib.h>
@@ -23,4 +23,4 @@ typedef struct f_funct
 
 >>>>>>> 84bb7ba65322517bf411dd2b3c2bc22763afaee5
 
-#endif HEADER_H
+#endif MAIN_H
