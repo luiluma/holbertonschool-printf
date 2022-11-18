@@ -1,13 +1,16 @@
-#ifdef MAIN_H
+#ifndef MAIN_H
 #define MAIN_H
 
-//Libraries//
+/*libraries*/
 #include<stdlib.h>
 #include<stdio.h>
 #include <stdarg.h>
 #include<string.h>
 #include <unistd.h>
 
+/*prototypes*/
+int (*get_func(const char *s))(va_list);
+int _printf(const char *format, ...);
 
 //Estructura de la funcion:
 typedef struct f_funct
