@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdarg.h>
 
 /*
 * get_func - selecciona chars para la conversion
