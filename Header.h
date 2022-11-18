@@ -4,13 +4,8 @@
 //Libraries:
 #include<stdlib.h>
 #include<stdio.h>
-<<<<<<< HEAD
-#include<stdarg.h>
-
-//Prototypes//
-int _printf(const char *format, ...);
-=======
 #include <stdarg.h>
+#include<string.h>
 
 
 //Estructura de la funcion:
@@ -21,6 +16,5 @@ typedef struct f_funct
 } f_funct;
 
 
->>>>>>> 84bb7ba65322517bf411dd2b3c2bc22763afaee5
 
 #endif HEADER_H
