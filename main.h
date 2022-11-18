@@ -1,11 +1,12 @@
-#ifdef HEADER_H
-#define HEADER_H
+#ifdef MAIN_H
+#define MAIN_H
 
 //Libraries:
 #include<stdlib.h>
 #include<stdio.h>
 #include <stdarg.h>
 #include<string.h>
+#include <unistd.h>
 
 
 //Estructura de la funcion:
@@ -17,4 +18,4 @@ typedef struct f_funct
 
 
 
-#endif HEADER_H
+#endif MAIN_H

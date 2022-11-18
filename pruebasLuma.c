@@ -1,6 +1,14 @@
-#include "Header.h"
+#include "main.h"
+#include <stdarg.h>
 
-int (*get_func(const char *s, int a))(va_list)
+/*
+* get_func - selecciona chars para la conversion
+*
+* @s: verificacion
+*
+* Retorno: puntero a funcion
+*/
+int (* get_func(const char *s,))(va_list)
 {
     f_funct arr[] = {
 
@@ -8,6 +16,30 @@ int (*get_func(const char *s, int a))(va_list)
         {"s", print_str},
 		{"i", print_int}, 
         {"d", print_int},
-        {"%"}, print_for}, 
-        {NULL, NULL},}
+        {"%"}, print_for},
+};
+    int i;
+    i = 0;
+
+    while (i < 5)
+    {
+        if (s == arr[i].s[0])
+			return (arr[i].f);
+
+		i++;
+	}
+	return (NULL);
+
+
+/*
+*
+*
+*
+*
+*
+*/
+
+int _printf(const char *format, ...)
+{
+
 }
