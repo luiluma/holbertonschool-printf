@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdarg.h>
+
 
 /*
 * _printf - function printf
@@ -8,8 +8,9 @@
 *
 * Retorno: print value chars
 */
+int _printf(const char *format, ...){
+    unsigned int i = 0;
 
-int _printf(const char *format, ...)
-{
-    
-}
+if (!format)
+    return (NULL);
+while (format[i])
