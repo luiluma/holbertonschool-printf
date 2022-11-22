@@ -8,9 +8,7 @@
 
 <p>This project is a simulation of the PrintF function in C programming language.</p>
 
-
 <h1>Man Page</h1>
-<hr>
 <img src= "https://theburningmonk.com/wp-content/uploads/2010/01/image17.png" width="300" height="300"/>
 
 <p>Here we have the respective manual of our PrintF function, which contains some help when using Printf in our shell's</p>
@@ -25,7 +23,7 @@
 <img src= "https://i.pinimg.com/originals/b8/09/27/b80927e5d832e5535c1b3fbf5be51689.jpg" width="400" height="400"/>
 
 <h2>AUTHORS</h2>
-- Juan Eduardo Gomez.
-- Luisa Maria Lopez.
+<h5>Juan Eduardo Gomez.</h5>
+<h5>Luisa Maria Lopez.</h5>
 </body>
 </html>
