@@ -1,17 +1,13 @@
-### PRINTF PROJECT
+<html>
+<body>
+        <h1>PRINTF PROJECT</h1>
+        <hr="n">
+        <h2>Description</h2>
 
-####Description
+        <p>This project is a simulation of the PrintF function in C programming language.</p>
 
-##### This project is a simulation of the PrintF function in C programming language.
+        <h1>MAN "printf"</h1>
 
-# MAN "printf"
-
-######Here we have the respective manual of our PrintF function, which contains some help when using Printf in our shell's
-
--------
-
-**Table of Contents**
-
-[TOCM]
-
-[TOC]
+        <p>Here we have the respective manual of our PrintF function, which contains some help when using Printf in our shell's</p>
+</body>
+</html>
