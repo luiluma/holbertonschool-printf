@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdarg.h>
-
 /*
 * get_func - selecciona chars para la conversion
 *
@@ -8,9 +6,9 @@
 *
 * Return: puntero a funcion
 */
-int (*get_func(const char *s))(va_list)
+int (*get_func(const char *argument))(va_list)
 {
-    f_funct arr[] = {
+    f_funct form[] = {
 
         {"c", print_chr}, 
         {"s", print_str},
