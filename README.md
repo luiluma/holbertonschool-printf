@@ -14,14 +14,18 @@
 <img src= "https://theburningmonk.com/wp-content/uploads/2010/01/image17.png" width="300" height="300"/>
 
 <p>Here we have the respective manual of our PrintF function, which contains some help when using Printf in our shell's</p>
-<h2> In this manual you will find the different format specifiers that can be used with this function.</h2>
+<p> In this manual you will find the different format specifiers that can be used with this function.</p>
 
-<h2>To enter the manual of this function, you must enter the man command and then the file name</h2> 
+<h4>To enter the manual of this function, you must enter the man command and then the file name</h4> 
 
 <h1>Flowchart</h1>
 
 <p>IMAGEN</p>
 
 <img src= "https://i.pinimg.com/originals/b8/09/27/b80927e5d832e5535c1b3fbf5be51689.jpg" width="400" height="400"/>
+
+<h2>AUTHORS</h2>
+- Juan Eduardo Gomez.
+- Luisa Maria Lopez.
 </body>
 </html>
