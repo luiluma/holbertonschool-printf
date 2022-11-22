@@ -20,7 +20,6 @@ int _printf(const char *format, ...)
     va_list list;
 
     va_start(list, format);
->>>>>>> 4d0ff69651dec698e7b98bf41dcd568e951a8b42
 
     if (!format)
         exit(1);

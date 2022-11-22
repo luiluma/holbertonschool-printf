@@ -1,5 +1,7 @@
-.SH NAME
-    _printf - format and print data.
+./" Manpage _printf
+_printf - format and print data.
+.TH NAME
+Man 3_printf
 
 .SH SYNOPSIS
     printf FORMAT [ARGUMENT]...
@@ -22,9 +24,10 @@
         %s Character string (terminated in '\0').
         %% Prints the % symbol.
 
-.SH NOTE: We do not advise you to follow this manual, in your own shell you will find a global manual of the function.
+.SH NOTE: 
+    We do not advise you to follow this manual, in your own shell you will find a global manual of the function.
     refer to your shell's documentation for details on which options are supported.
     
 .SH AUTHOR
-        Written by Juan Eduardo Gomez.
-        and by Luisa Maria Lopez.
+    Written by Juan Eduardo Gomez.
+    and by Luisa Maria Lopez.
