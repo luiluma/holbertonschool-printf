@@ -6,7 +6,8 @@
 
 <p>This project is a simulation of the PrintF function in C programming language.</p>
 
-<marquee>(Man)
+<h1>MAN "printf"</h1>
+<img src="man.gif">
 
 <p>Here we have the respective manual of our PrintF function, which contains some help when using Printf in our shell's</p>
 </body>
