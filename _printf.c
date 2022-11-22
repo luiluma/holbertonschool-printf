@@ -1,5 +1,15 @@
 #include "main.h"
 /*
+<<<<<<< HEAD
+* _printf - function printf
+*
+* @format: string format
+*
+* Return: print value chars
+*/
+int _printf(const char *format, ...){
+    unsigned int i = 0;
+=======
  * _printf - function printf
  * @format: string format
  * Retorno: print value chars

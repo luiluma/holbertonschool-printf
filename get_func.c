@@ -13,7 +13,7 @@ int (*get_func(const char *argument))(va_list)
         {"c", print_chr}, 
         {"s", print_str},
 		{"i", print_int}, 
-        {"d", print_int},
+        {"d", print_int_dec},
         {"%", print_form},
     };
     int i = 0;

@@ -1,16 +1,18 @@
-NAME
-    _printf - format and print data.
+./" Manpage _printf
+_printf - format and print data.
+.TH NAME
+Man 3_printf
 
-SYNOPSIS
+.SH SYNOPSIS
     printf FORMAT [ARGUMENT]...
     This is the manual of the PrintF function along with its specification formats.
 
-DESCRIPTION
+.SH DESCRIPTION
     prints a message to the screen using a "format string" that includes instructions 
     for mixing multiple strings into the final string to be displayed on the screen.
     
     
-    CHARACTER TYPE FORMAT
+.SH CHARACTER TYPE FORMAT
 
         %c Prints the corresponding ASCII character.
         %d, %i Signed decimal conversion of an integer.
@@ -22,13 +24,10 @@ DESCRIPTION
         %s Character string (terminated in '\0').
         %% Prints the % symbol.
 
-    NOTE: We do not advise you to follow this manual, in your own shell you will find a global manual of the function.
+.SH NOTE: 
+    We do not advise you to follow this manual, in your own shell you will find a global manual of the function.
     refer to your shell's documentation for details on which options are supported.
     
-    AUTHOR
-        Written by Juan Eduardo Gomez.
-        and by Luisa Maria Lopez.
-
-    
-
-     
+.SH AUTHOR
+    Written by Juan Eduardo Gomez.
+    and by Luisa Maria Lopez.
