@@ -20,7 +20,7 @@
 
 <p>IMAGEN</p>
 
-<img src= "https://i.pinimg.com/originals/b8/09/27/b80927e5d832e5535c1b3fbf5be51689.jpg" width="400" height="400"/>
+<img src= "https://i.pinimg.com/originals/b8/09/27/b80927e5d832e5535c1b3fbf5be51689.jpg" width="400" height="auto"/>
 
 <h2>AUTHORS</h2>
 <h5>Juan Eduardo Gomez.</h5>
