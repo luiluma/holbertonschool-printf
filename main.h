@@ -2,18 +2,25 @@
 #define MAIN_H
 
 /*libraries*/
-#include<stdlib.h>
-#include<stdio.h>
+#include <stdio.h>
 #include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
 #include <unistd.h>
 
-/*prototypes*/
+typedef struct funct
+{
+	char *ptr;
+	int (*f)(char *, int, va_list);
+} func_t;
 
-int (*get_func(const char *s))(va_list);
-int _printf(const char *format, ...); /*Prototype of _printf*/
-int print_char(va_list list);
-int print_string(va_list list);
-int get_spec_format(char *);
-int (*get_func(const char *format))(va_list);
+/*prototypes*/
+int _printf(char *format, ...); /*Prototype of _printf*/
+
+int print_str(char *, int, va_list);
+int print_chr(char *, int, va_list);
+int print_form (char *, int , va_list);
+
+int (*select_funct(char *arg))(char *, int , va_list);
 
 #endif

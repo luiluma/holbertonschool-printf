@@ -1,34 +1,45 @@
 #include "main.h"
 /*
-<<<<<<< HEAD
-* _printf - function printf
-*
-* @format: string format
-*
-* Return: print value chars
-*/
-int _printf(const char *format, ...){
-    unsigned int i = 0;
-=======
  * _printf - function printf
  * @format: string format
- * Retorno: print value chars
+ * Return: print value chars
  */
-int _printf(const char *format, ...)
+int _printf(char *format, ...)
 {
-    unsigned int i = 0, count = 0;
-    va_list list;
+	int i = 0, counter = 0;
+	int (*f)(char *, int, va_list);
+	char *buffer;
+	va_list list;
 
-    va_start(list, format);
+buffer = malloc(100);
 
-    if (!format)
-        exit(1);
-    while (format[i])
-    {
-        if (format[i] != '%')
-        {
-            _putchar(format[i]);
-            count++;
-        }
-    }
+	va_start(list, format);
+	if (!format || (format[0] == '%' && format[1] == '\0'))
+		exit(1);
+for (; format[i] != '\0'; i++)
+	{
+		if (format[i] != '%')
+		{
+			buffer[counter] = format[i];
+			counter ++;
+		}
+		else
+		{
+				f = select_funct(&(format[i + 1]));
+				if (f != NULL)
+			{
+				counter = f(&buffer[counter], counter, list);
+				i++;
+			}
+			else
+			{
+				buffer[counter] = format[i];
+				counter++;
+			}
+		}
+	}
+	write(1, buffer, counter);
+	free(buffer);
+	va_end(list);
+	return (counter);
 }
