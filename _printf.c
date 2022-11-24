@@ -11,7 +11,7 @@ int _printf(char *format, ...)
 	char *buffer;
 	va_list list;
 
-buffer = malloc(100);
+buffer = malloc(2000);
 
 	va_start(list, format);
 	if (!format || (format[0] == '%' && format[1] == '\0'))
