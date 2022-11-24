@@ -1,6 +1,8 @@
 ./" Manpage _printf
 _printf - format and print data.
-.TH NAME
+.TH _printf 21 november 2022.
+
+.SH NAME
 Man 3_printf
 
 .SH SYNOPSIS
