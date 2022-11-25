@@ -19,6 +19,7 @@ int _printf(char *format, ...)
 		if (format[i] != '%')
 		{
 			buffer[counter] = format[i];
+			counter ++;
 		}
 		else if (format[i] == '%' && verify_format(format[i + 1]) == 1)
 		{
@@ -31,14 +32,15 @@ int _printf(char *format, ...)
 			else
 			{
 				buffer[counter] = format[i];
+				counter++;
 			}
 		}
 		else
 		{
 			buffer[counter] = format[i];
+			counter ++;
 		};
 	}
-	counter = _strlen(buffer);
 	write(1, buffer, counter);
 	free(buffer);
 	va_end(list);
