@@ -26,15 +26,15 @@ int _printf(char *format, ...) /*prototipo*/
 		{
 				f = select_funct(&(format[i + 1]));
 				if (f != NULL)
-		    {
+				{
 				counter = f(&buffer[counter], counter, list);
 				i++;
-			}
-			else
-			{
-				buffer[counter] = format[i];
-				counter++;
-			}
+				}
+				else
+				{
+					buffer[counter] = format[i];
+					counter++;
+				}
 		}
 		else
 		{
