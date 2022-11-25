@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_chr - the funtion name
+ * print_chr - the function name
  * @c: argument
  * Return: 1
 */
@@ -29,22 +29,22 @@ int print_str(char *buffer, int counter, va_list list)
 	return (counter);
 }
 
-int print_module (char *buffer, int counter, va_list __attribute__((unused)) list)
+int print_module(char *buffer, int counter, va_list __attribute__((unused)) list)
 {
 	buffer[0] = '%';
 	counter++;
-	return(counter);
+	return (counter);
 }
 
 int verify_format(char v)
 {
-	if(v == 'd' || v == 'i' || v == 's' || v == 'c' || v == '%')
-		return(1);
+	if (v == 'd' || v == 'i' || v == 's' || v == 'c' || v == '%')
+		return (1);
 	else
-		return(0);
+		return (0);
 }
 
-int correct_printf(char *format, char* buffer)
+int correct_printf(char *format, char *buffer)
 {
 	if (!format || !buffer)
 		return (0);
