@@ -14,7 +14,7 @@ int _printf(char *format, ...)
 	buffer = malloc(5000);
 	va_start(list, format);
 	if (!format || !buffer || (format[0] == '%' && format[1] == '\0'))
-		exit(1);
+		return(-1);
 for (; format[i] != '\0'; i++)
 	{
 		if (format[i] != '%')
