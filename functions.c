@@ -1,6 +1,8 @@
 #include "main.h"
 /**
  * print_chr - the function name
+ * @buffer: printf string content
+ * @counter: count arg
  * @c: argument
  * Return: 1
 */
@@ -12,6 +14,11 @@ int print_chr(char *buffer, int counter, va_list list)
 	return (counter);
 }
 
+/*
+* print_str - printf string
+* @s: variable
+* return: counter
+*/
 int print_str(char *buffer, int counter, va_list list)
 {
 	char *s;
