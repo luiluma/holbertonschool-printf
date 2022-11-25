@@ -42,6 +42,6 @@ int verify_format(char v)
 	if(v == 'd' || v == 'i' || v == 's' || v == 'c' || v == '%')
 		return(1);
 	else
-		exit(1);
+		return(0);
 
 }
