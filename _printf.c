@@ -2,6 +2,7 @@
 /**
 * _printf - function printf
 * @format: string format
+* @buffer: printf string content
 * Return: print value chars
 */
 int _printf(char *format, ...) /*prototipo*/
@@ -19,7 +20,7 @@ int _printf(char *format, ...) /*prototipo*/
 		if (format[i] != '%')
 		{
 			buffer[counter] = format[i];
-			counter ++;
+			counter++;
 		}
 		else if (format[i] == '%' && verify_format(format[i + 1]) == 1)
 		{
@@ -38,7 +39,7 @@ int _printf(char *format, ...) /*prototipo*/
 		else
 		{
 			buffer[counter] = format[i];
-			counter ++;
+			counter++;
 		};
 	}
 	write(1, buffer, counter);

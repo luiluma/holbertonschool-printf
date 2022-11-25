@@ -1,10 +1,10 @@
 #include "main.h"
 /*
- * get_func - selection char 
+ * get_func - selection char
  * @s: verification
  * Return: pointer for function
  */
-int (*select_funct(char *arg))(char *, int , va_list)
+int (*select_funct(char *arg))(char *, int, va_list)
 {
 	int i = 0;
 	func_t form[] = {
