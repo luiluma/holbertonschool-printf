@@ -29,7 +29,7 @@ int print_str(char *buffer, int counter, va_list list)
 	return (counter);
 }
 
-int print_module(char *buffer, int counter, va_list __attribute__((unused)) list)
+int print_mod(char *buffer, int counter, va_list __attribute__((unused)) list)
 {
 	buffer[0] = '%';
 	counter++;

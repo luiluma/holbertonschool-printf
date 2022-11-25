@@ -13,7 +13,7 @@ int (*select_funct(char *arg))(char *, int, va_list)
 		{"s", print_str},
 		/*{"i", print_int},*/
 		/*{"d", print_int},*/
-		{"%", print_module},
+		{"%", print_mod},
 		{NULL, NULL}
 	};
 
