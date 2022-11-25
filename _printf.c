@@ -13,7 +13,7 @@ int _printf(char *format, ...)
 
 	va_start(list, format);
 	if (!correct_printf(format, buffer))
-		return (-1);
+		exit(1);
 	for (; format[i] != '\0'; i++)
 	{
 		if (format[i] != '%')
