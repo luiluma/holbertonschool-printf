@@ -8,7 +8,7 @@
 int _printf(char *format, ...) /*prototipo*/
 {
 	int i = 0, counter = 0; /*declaramos variables*/
-	int (*f)(char *, int, va_list); /*declaramos f y le pasamos argumentos char, entero y va_list*/
+	int (*f)(char *, int, va_list);
 	char *buffer = malloc(2000); /*declaramos un puntero buffer el cual es igual a un espacio de memoria 2000*/
 	va_list list; /*le pasamos a va_list el parametro llamado list*/
 
