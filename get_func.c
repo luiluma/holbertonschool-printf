@@ -17,7 +17,7 @@ int (*select_funct(char *arg))(char *, int , va_list)
 		{NULL, NULL}
 	};
 
-	while (i < 10)
+	while (i < 5)
 	{
 		if (*arg == *(form[i]).ptr)
 			return ((form[i].f));
