@@ -29,18 +29,11 @@ int print_str(char *buffer, int counter, va_list list)
 	return (counter);
 }
 
-<<<<<<< HEAD
-/* int print_form (char *buffer, int counter, va_list)
-=======
 int print_module (char *buffer, int counter, va_list __attribute__((unused)) list)
->>>>>>> 636dfc3f84b159f741124ccaa062e70bb8641887
 {
 	buffer[0] = '%';
 	counter++;
 	return(counter);
-<<<<<<< HEAD
-}*/
-=======
 }
 
 int verify_format(char v)
@@ -60,4 +53,3 @@ int correct_printf(char *format, char* buffer)
 	else
 		return (1);
 }
->>>>>>> 636dfc3f84b159f741124ccaa062e70bb8641887
