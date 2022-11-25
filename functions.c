@@ -35,3 +35,4 @@ int print_str (char *buffer, int counter, va_list list)
 	counter++;
 	return(counter);
 }*/
+
