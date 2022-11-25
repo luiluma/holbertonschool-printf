@@ -9,7 +9,7 @@ int _printf(char *format, ...) /*prototipo*/
 {
 	int i = 0, counter = 0; /*declaramos variables*/
 	int (*f)(char *, int, va_list);
-	char *buffer = malloc(2000); /*declaramos un puntero buffer el cual es igual a un espacio de memoria 2000*/
+	char *buffer = malloc(2000);
 	va_list list; /*le pasamos a va_list el parametro llamado list*/
 
 	va_start(list, format); /**/
@@ -19,7 +19,7 @@ int _printf(char *format, ...) /*prototipo*/
 	{
 		if (format[i] != '%') /* */
 		{
-			buffer[counter] = format[i]; 
+			buffer[counter] = format[i];
 			counter++;
 		}
 		else if (format[i] == '%' && !verify_format(format[i + 1]))
