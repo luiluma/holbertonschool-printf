@@ -12,8 +12,8 @@ int (*select_funct(char *arg))(char *, int , va_list)
 		{"c", print_chr},
 		{"s", print_str},
 		/*{"i", print_int},
-		{"d", print_int},
-		{"%", print_form},*/
+		{"d", print_int},*/
+		{"%", print_module},
 		{NULL, NULL}
 	};
 
