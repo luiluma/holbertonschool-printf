@@ -5,14 +5,14 @@
  * Return: 1
 */
 
-int print_chr (char *buffer, int counter, va_list list)
+int print_chr(char *buffer, int counter, va_list list)
 {
 	buffer[0] = va_arg(list, int);
 	counter++;
 	return (counter);
 }
 
-int print_str (char *buffer, int counter, va_list list)
+int print_str(char *buffer, int counter, va_list list)
 {
 	char *s;
 	int i = 0;
@@ -29,10 +29,9 @@ int print_str (char *buffer, int counter, va_list list)
 	return (counter);
 }
 
-/*int print_form (char *buffer, int counter, va_list)
+/* int print_form (char *buffer, int counter, va_list)
 {
 	buffer[0] = '%';
 	counter++;
 	return(counter);
 }*/
-

@@ -1,17 +1,14 @@
 #include "main.h"
-/*
+/**
 * _printf - function printf
-*
 * @format: string format
-*
 * Return: print value chars
 */
-
-int _printf(char *format, ...)
+int _printf(char *format, ...) /*prototipo*/
 {
-	int i = 0, counter = 0;
-	int (*f)(char *, int, va_list);
-	char *buffer;
+	int i = 0, counter = 0; /* i va a tomar la posicion de la string  */
+	int (*f)(char *, int, va_list); /* la f nos da como parametros un puntero char, un entero y el va_list*/
+	char *buffer; /**/
 	va_list list;
 
 buffer = malloc(2000);
