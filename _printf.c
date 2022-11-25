@@ -21,7 +21,7 @@ int _printf(char *format, ...) /*prototipo*/
 			buffer[counter] = format[i];
 			counter ++;
 		}
-		else if (format[i] == '%' && verify_format(format[i + 1]) == 1)
+		else if (format[i] == '%' && !verify_format(format[i + 1]))
 		{
 				f = select_funct(&(format[i + 1]));
 				if (f != NULL)
@@ -29,17 +29,12 @@ int _printf(char *format, ...) /*prototipo*/
 				counter = f(&buffer[counter], counter, list);
 				i++;
 			}
-			else
-			{
-				buffer[counter] = format[i];
-				counter++;
-			}
 		}
 		else
 		{
 			buffer[counter] = format[i];
 			counter ++;
-		};
+		}
 	}
 	write(1, buffer, counter);
 	free(buffer);
