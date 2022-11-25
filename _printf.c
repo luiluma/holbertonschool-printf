@@ -38,7 +38,10 @@ for (; format[i] != '\0'; i++)
 			}
 		}
 		else
-		    exit(1);
+		{
+			buffer[counter] = format[i];
+			counter ++;
+		};
 
 	}
 	counter = _strlen(buffer);

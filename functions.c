@@ -38,10 +38,8 @@ int print_str (char *buffer, int counter, va_list list)
 
 int verify_format(char v)
 {
-
 	if(v == 'd' || v == 'i' || v == 's' || v == 'c' || v == '%')
 		return(1);
 	else
 		return(0);
-
 }
