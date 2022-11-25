@@ -25,6 +25,7 @@ int _strlen(char *s);
 int correct_printf(char *, char*);
 
 
+
 int (*select_funct(char *arg))(char *, int , va_list);
 
 #endif

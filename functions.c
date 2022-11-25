@@ -52,5 +52,5 @@ int correct_printf(char *format, char* buffer)
 		return (0);
 	else
 		return (1);
-
 }
+

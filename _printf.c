@@ -8,10 +8,9 @@ int _printf(char *format, ...)
 {
 	int i = 0, counter = 0;
 	int (*f)(char *, int, va_list);
-	char *buffer;
+	char *buffer = malloc(2000);
 	va_list list;
 
-	buffer = malloc(5000);
 	va_start(list, format);
 	if (!correct_printf(format, buffer))
 		return (-1);
