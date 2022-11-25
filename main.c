@@ -11,8 +11,8 @@ int main(void)
 {
 
 
-    _printf("Lets %! \n", "juano");
-    printf("Lets %! \n", "juano");
+    _printf("Lets %\n", "juano");
+    printf("Lets %\n", "juano");
 
     return (0);
 }

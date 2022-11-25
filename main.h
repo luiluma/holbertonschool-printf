@@ -22,6 +22,7 @@ int print_str(char *, int, va_list);
 int print_chr(char *, int, va_list);
 int print_form (char *, int , va_list);
 int _strlen(char *s);
+int correct_printf(char *, char*);
 
 
 int (*select_funct(char *arg))(char *, int , va_list);
