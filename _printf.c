@@ -13,6 +13,9 @@ int _printf(char *format, ...)
 
 buffer = malloc(5000);
 
+if (buffer == NULL)
+	return (NULL);
+
 	va_start(list, format);
 	if (!format || (format[0] == '%' && format[1] == '\0'))
 		exit(1);
@@ -42,7 +45,6 @@ for (; format[i] != '\0'; i++)
 			buffer[counter] = format[i];
 			counter ++;
 		};
-
 	}
 	counter = _strlen(buffer);
 	write(1, buffer, counter);
