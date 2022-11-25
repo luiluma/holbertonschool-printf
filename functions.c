@@ -42,9 +42,9 @@ int print_mod(char *buffer, int counter, va_list __attribute__((unused)) list)
 int verify_format(char v)
 {
 	if (v == 'd' || v == 'i' || v == 's' || v == 'c' || v == '%')
-		return (1);
-	else
 		return (0);
+	else
+		return (1);
 }
 
 int correct_printf(char *format, char *buffer)
