@@ -17,9 +17,12 @@ typedef struct funct
 /*prototypes*/
 int _printf(char *format, ...); /*Prototype of _printf*/
 
+int verify_format(char v);
 int print_str(char *, int, va_list);
 int print_chr(char *, int, va_list);
 int print_form (char *, int , va_list);
+int _strlen(char *s);
+
 
 int (*select_funct(char *arg))(char *, int , va_list);
 

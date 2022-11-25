@@ -11,7 +11,7 @@ int _printf(char *format, ...)
 	char *buffer;
 	va_list list;
 
-buffer = malloc(2000);
+buffer = malloc(5000);
 
 	va_start(list, format);
 	if (!format || (format[0] == '%' && format[1] == '\0'))
@@ -23,11 +23,11 @@ for (; format[i] != '\0'; i++)
 			buffer[counter] = format[i];
 			counter ++;
 		}
-		else
+		else if (format[i] == '%' && verify_format(format[i + 1]) == 1)
 		{
 				f = select_funct(&(format[i + 1]));
 				if (f != NULL)
-			{
+		    {
 				counter = f(&buffer[counter], counter, list);
 				i++;
 			}
@@ -37,7 +37,11 @@ for (; format[i] != '\0'; i++)
 				counter++;
 			}
 		}
+		else
+		    exit(1);
+
 	}
+	counter = _strlen(buffer);
 	write(1, buffer, counter);
 	free(buffer);
 	va_end(list);
