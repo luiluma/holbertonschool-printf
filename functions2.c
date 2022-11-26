@@ -95,7 +95,7 @@ int print_int(char *buffer, int counter, va_list list)
  * @counter: count
  * @forma: pointer string
 */
-int _assign(char *buffer, int counter, char *forma)
+int _select(char *buffer, int counter, char *forma)
 {
 	int i = 0;
 
