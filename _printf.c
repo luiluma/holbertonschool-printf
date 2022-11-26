@@ -2,7 +2,6 @@
 /**
 * _printf - function printf
 * @format: string format
-* @buffer: printf string content
 * Return: print value chars
 */
 int _printf(char *format, ...)
