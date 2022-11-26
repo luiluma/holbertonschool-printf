@@ -48,7 +48,7 @@ Note that we will not provide the _putchar function for this project</p>
 <img src= "https://i.pinimg.com/originals/b8/09/27/b80927e5d832e5535c1b3fbf5be51689.jpg" width="400" height="auto"/>
 
 <h2>AUTHORS</h2>
-<h5>Juan Eduardo Gomez.</h5>
-<h5>Luisa Maria Lopez.</h5>
+<h5>Juan Eduardo Gomez.</h5> <img src="https://www.pofilo.fr/img/SPOF-github/github1600.png" width="100" height="100"/>
+<h5>Luisa Maria Lopez.</h5><img src="https://www.pofilo.fr/img/SPOF-github/github1600.png" width="100" height="100"/>
 </body>
 </html>
