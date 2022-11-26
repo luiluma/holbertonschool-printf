@@ -16,6 +16,7 @@ int print_chr(char *buffer, int counter, va_list list)
 /**
  * print_str - print a string.
  * @buffer: string buf.
+ * @counter: count string
  * @s: point
  * @list: va_list arg
  * Return: long to print
@@ -54,8 +55,8 @@ int print_mod(char *buffer, int counter, va_list __attribute__((unused)) list)
 /**
  * verify_format - verifies that only certain characters are received
  * @v: the format character
- * Return: 0 and if "v" is some characters return 1 
- * 
+ * Return: 0 and if "v" is some characters return 1
+ *
 */
 int verify_format(char v)
 {
@@ -66,10 +67,10 @@ else
 }
 /**
  * correct_printf - correct output
- * @format: point argument base 
+ * @format: point argument base
  * @buffer: point long memory
  * Return: 0
- * 
+ *
 */
 int correct_printf(char *format, char *buffer)
 {
