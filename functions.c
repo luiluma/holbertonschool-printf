@@ -46,12 +46,3 @@ else
 	return (1);
 }
 
-int correct_printf(char *format, char *buffer)
-{
-	if (!format || !buffer)
-		return (0);
-	if (format[0] == '%' && format[1] == '\0')
-		return (0);
-	else
-		return (1);
-}
