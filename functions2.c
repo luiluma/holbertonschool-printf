@@ -1,9 +1,9 @@
 #include "main.h"
 /**
  * _abs - get absolute number
- * @n: number 
+ * @n:number
  * Return: number
- * 
+ *
 */
 
 int _abs(int n)
@@ -20,7 +20,7 @@ int _abs(int n)
  * @s: point string
  * @n: number
  * Return: string
- * 
+ *
 */
 
 char *_reverse(char *s, int n)
@@ -43,7 +43,7 @@ char *_reverse(char *s, int n)
  * @list: argument list
  * @base: base
  * Return: reverse
- * 
+ *
 */
 char *_itoa(int list, int base)
 {
@@ -90,10 +90,11 @@ int print_int(char *buffer, int counter, va_list list)
 	return (_select(buffer, counter, s));
 }
 /**
- * _assign - assignation the arguments
+ * _select - assignation the arguments
  * @buffer: memory espace
  * @counter: count
  * @forma: pointer string
+ * Return: counter
 */
 int _select(char *buffer, int counter, char *forma)
 {
