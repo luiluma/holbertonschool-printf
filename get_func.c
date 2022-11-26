@@ -1,6 +1,6 @@
 #include "main.h"
 /*
- * get_func - selection char
+ * select_funct - selection char
  * @s: verification
  * Return: pointer for function
  */
