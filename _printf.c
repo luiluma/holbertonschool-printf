@@ -8,7 +8,7 @@ int _printf(char *format, ...)
 {
 	int i = 0, counter = 0;
 	int (*f)(char *, int, va_list);
-	char *buffer = malloc(2000);
+	char *buffer = malloc(5000);
 	va_list list;
 
 	va_start(list, format);
