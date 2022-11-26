@@ -42,9 +42,9 @@ Note that we will not provide the _putchar function for this project</p>
 <h4>To enter the manual of this function, you must enter the man command and then the file name</h4> 
 
 <h1>Flowchart</h1>
+<img src="https://i.ibb.co/vY37DRN/flujo-png.jpg" alt="flujo-png" border="0"></a>
 
-<img src= "https://ibb.co/0tCgQv0" width= "400" height="400"/>
-
+<h3>THE END</h3>
 <img src= "https://i.pinimg.com/originals/b8/09/27/b80927e5d832e5535c1b3fbf5be51689.jpg" width="400" height="auto"/>
 
 <h2>AUTHORS</h2>
