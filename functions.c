@@ -3,9 +3,8 @@
  * print_chr - the function name
  * @buffer: printf string content
  * @counter: count arg
- * @c: argument
  * @list: number for the list the arg the string
- * Return: 1
+ * Return: 0
 */
 
 int print_chr(char *buffer, int counter, va_list list)
