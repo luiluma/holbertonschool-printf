@@ -1,12 +1,13 @@
 <html>
 <body>
-<h1>PRINTF PROJECT</h1>
-<img src= "https://i.ytimg.com/vi/mZFdyoZhUb4/maxresdefault.jpg" width="300" height="auto"/>
+<h1>¡PRINTF PROJECT!</h1>
+<h4>01110000 01110010 01101001 01101110 01110100 01100110 00100000 01110000 01110010 01101111 01101010 01100101 01100011 01110100</h4>
+<img src= "https://i.ytimg.com/vi/mZFdyoZhUb4/maxresdefault.jpg" width="300" height="300"/>
 <hr>
 
-<h2>Requirements</h2>
-<p>Allowed editors: vi, vim, emacs</p>
-<p>All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra     pedantic -std=gnu89</p>
+<h2>REQUIREMENTS</h2>
+<p>-Allowed editors: vi, vim, emacs</p>
+<p>-All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra     pedantic -std=gnu89</p>
 <p>-All your files should end with a new line</p>
 <p>-A README.md file, at the root of the folder of the project is mandatory</p>
 <P>-Your code should use the Betty style. It will be checked using betty-style.pl and betty-doc.pl</p>
