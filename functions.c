@@ -17,7 +17,6 @@ int print_chr(char *buffer, int counter, va_list list)
  * print_str - print a string.
  * @buffer: string buf.
  * @counter: count string
- * @s: point
  * @list: va_list arg
  * Return: long to print
 */
