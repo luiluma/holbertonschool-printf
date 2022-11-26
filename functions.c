@@ -1,7 +1,10 @@
 #include "main.h"
 /**
- * print_chr - the funtion name
+ * print_chr - the function name
+ * @buffer: printf string content
+ * @counter: count arg
  * @c: argument
+ * @list: number for the list the arg the string
  * Return: 1
 */
 
@@ -29,11 +32,11 @@ int print_str(char *buffer, int counter, va_list list)
 	return (counter);
 }
 
-int print_module (char *buffer, int counter, va_list __attribute__((unused)) list)
+int print_mod(char *buffer, int counter, va_list __attribute__((unused)) list)
 {
 	buffer[0] = '%';
 	counter++;
-	return(counter);
+	return (counter);
 }
 
 int verify_format(char v)
@@ -44,7 +47,7 @@ int verify_format(char v)
 		return(1);
 }
 
-int correct_printf(char *format, char* buffer)
+int correct_printf(char *format, char *buffer)
 {
 	if (!format || !buffer)
 		return (0);
