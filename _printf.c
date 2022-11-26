@@ -24,11 +24,11 @@ int _printf(char *format, ...) /*prototipo*/
 		}
 		else if (format[i] == '%' && !verify_format(format[i + 1]))
 		{
-				f = select_funct(&(format[i + 1]));
-				if (f != NULL)
-				{
-				counter = f(&buffer[counter], counter, list);
-				i++;
+			f = select_funct(&(format[i + 1]));
+			if (f != NULL)
+			{
+			counter = f(&buffer[counter], counter, list);
+			i++;
 			}
 		}
 		else
