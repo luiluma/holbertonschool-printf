@@ -93,9 +93,9 @@ int print_int(char *buffer, int counter, va_list list)
  * _assign - assignation the arguments
  * @buffer: memory espace
  * @counter: count
- * @value: pointer string
+ * @forma: pointer string
 */
-int _assign(char *buffer, int counter, char *value)
+int _assign(char *buffer, int counter, char *forma)
 {
 	int i = 0;
 
