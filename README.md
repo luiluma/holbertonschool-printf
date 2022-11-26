@@ -1,7 +1,8 @@
 <html>
 <body>
-<h1>PRINTF PROJECT</h1>
-<img src= "https://i.ytimg.com/vi/mZFdyoZhUb4/maxresdefault.jpg" width="300" height="auto"/>
+<h1>¡PRINTF PROJECT!</h1>
+<h4>01110000 01110010 01101001 01101110 01110100 01100110 00100000 01110000 01110010 01101111 01101010 01100101 01100011 01110100</h4>
+<img src= "https://i.ytimg.com/vi/mZFdyoZhUb4/maxresdefault.jpg" width="300" height="300"/>
 <hr>
 
 <h2>Requirements</h2>
