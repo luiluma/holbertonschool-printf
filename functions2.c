@@ -1,4 +1,11 @@
 #include "main.h"
+/**
+ * _abs - get absolute number
+ * @n: number 
+ * Return: number
+ * 
+*/
+
 int _abs(int n)
 {
 	if (n < 0)
@@ -8,6 +15,13 @@ int _abs(int n)
 	}
 	return (n);
 }
+/**
+ * _reverse - string reverse
+ * @s: point string
+ * @n: number
+ * Return: string
+ * 
+*/
 
 char *_reverse(char *s, int n)
 {
@@ -24,28 +38,30 @@ char *_reverse(char *s, int n)
 
 	return (s);
 }
-
+/**
+ * _itoa - converts the integer n to a string
+ * @list: argument list
+ * @base: base
+ * Return: reverse
+ * 
+*/
 char *_itoa(int list, int base)
 {
 	char buffer[1024];
-	int n, i;
+	int n = n = _abs(list), i, j;
 
 	if (base < 2 || base > 32)
 		exit(1);
-
-	n = _abs(list);
-
 	i = 0;
 	while (n)
 	{
-		int r = n % base;
+		j = n % base;
 
-		r = _abs(r);
-		if (r >= 10)
-			buffer[i++] = 65 + (r - 10);
+		j = _abs(j);
+		if (j >= 10)
+			buffer[i++] = 65 + (j - 10);
 		else
-			buffer[i++] = 48 + r;
-
+			buffer[i++] = 48 + j;
 		n = n / base;
 	}
 
@@ -59,20 +75,33 @@ char *_itoa(int list, int base)
 
 	return (_reverse(buffer, i));
 }
+/**
+ * print_int - print integer
+ * @buffer:memory espace
+ * @counter: count
+ * @list: argument list
+ * Return: function assign
+*/
 int print_int(char *buffer, int counter, va_list list)
 {
 	int base = 10;
-	char *str = _itoa(va_arg(list, int), base);
+	char *s = _itoa(va_arg(list, int), base);
 
-	return (_assign(buffer, counter, str));
+	return (_select(buffer, counter, s));
 }
-int _assign(char *buffer, int counter, char *value)
+/**
+ * _assign - assignation the arguments
+ * @buffer: memory espace
+ * @counter: count
+ * @forma: pointer string
+*/
+int _select(char *buffer, int counter, char *forma)
 {
 	int i = 0;
 
-	while (value[i])
+	while (forma[i])
 	{
-		buffer[i] = value[i];
+		buffer[i] = forma[i];
 		counter++;
 		i++;
 	}
