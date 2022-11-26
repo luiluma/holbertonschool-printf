@@ -5,19 +5,19 @@
 * @buffer: printf string content
 * Return: print value chars
 */
-int _printf(char *format, ...) /*prototipo*/
+int _printf(char *format, ...)
 {
-	int i = 0, counter = 0; /*declaramos variables*/
+	int i = 0, counter = 0;
 	int (*f)(char *, int, va_list);
 	char *buffer = malloc(2000);
-	va_list list; /*le pasamos a va_list el parametro llamado list*/
+	va_list list;
 
-	va_start(list, format); /**/
+	va_start(list, format);
 	if (!correct_printf(format, buffer))
-		exit(1); /*salida error*/
-	for (; format[i] != '\0'; i++) /* */
+		exit(1);
+	for (; format[i] != '\0'; i++)
 	{
-		if (format[i] != '%') /* */
+		if (format[i] != '%')
 		{
 			buffer[counter] = format[i];
 			counter++;
