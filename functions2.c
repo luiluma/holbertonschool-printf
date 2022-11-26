@@ -1,4 +1,11 @@
 #include "main.h"
+/**
+ * _abs - get absolute number
+ * @n: number 
+ * Return: number
+ * 
+*/
+
 int _abs(int n)
 {
 	if (n < 0)
@@ -8,6 +15,13 @@ int _abs(int n)
 	}
 	return (n);
 }
+/**
+ * _reverse - string reverse
+ * @s: point string
+ * @n: number
+ * Return: string
+ * 
+*/
 
 char *_reverse(char *s, int n)
 {
@@ -24,7 +38,13 @@ char *_reverse(char *s, int n)
 
 	return (s);
 }
-
+/**
+ * _itoa - converts the integer n to a string
+ * @list: argument list
+ * @base: base
+ * Return: reverse
+ * 
+*/
 char *_itoa(int list, int base)
 {
 	char buffer[1024];
@@ -59,6 +79,13 @@ char *_itoa(int list, int base)
 
 	return (_reverse(buffer, i));
 }
+/**
+ * print_int - print integer
+ * @buffer:memory espace
+ * @counter: count
+ * @list: argument list
+ * Return: function assign
+*/
 int print_int(char *buffer, int counter, va_list list)
 {
 	int base = 10;
@@ -66,6 +93,12 @@ int print_int(char *buffer, int counter, va_list list)
 
 	return (_assign(buffer, counter, str));
 }
+/**
+ * _assign - assignation the arguments
+ * @buffer: memory espace
+ * @counter: count
+ * @value: pointer string
+*/
 int _assign(char *buffer, int counter, char *value)
 {
 	int i = 0;
