@@ -43,7 +43,7 @@ Note that we will not provide the _putchar function for this project</p>
 
 <h1>Flowchart</h1>
 
-<img src= "C:\Users\luma2\Downloads\Untitled (1).jpg" width= "400" height="400"/>
+<img src= "https://ibb.co/0tCgQv0" width= "400" height="400"/>
 
 <img src= "https://i.pinimg.com/originals/b8/09/27/b80927e5d832e5535c1b3fbf5be51689.jpg" width="400" height="auto"/>
 
