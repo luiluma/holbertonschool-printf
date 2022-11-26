@@ -1,7 +1,7 @@
 #include "main.h"
-/*
- * get_func - selection char
- * @s: verification
+/**
+ * select_funct - selection char
+ * @arg: verification
  * Return: pointer for function
  */
 int (*select_funct(char *arg))(char *, int, va_list)
